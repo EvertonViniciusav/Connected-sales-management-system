@@ -4,6 +4,7 @@ from views.ProdutoView import produtoView
 def main(page: ft.Page):
     page.title = "Lanchonete do Siri Cascudo"
     page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
+    page.scroll = ft.ScrollMode.AUTO
     page.window.height = 600
     page.window.width = 600
 
