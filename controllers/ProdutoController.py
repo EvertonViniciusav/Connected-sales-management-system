@@ -18,20 +18,24 @@ class ProdutoController:
             cursor.close()
 
     def listar(conexao):
+        listaProdutos = []
         try:
             cursor = conexao.cursor()
             query = "Select * from produto"
             cursor.execute(query)
             registros = cursor.fetchall()
 
-            for produto in registros:
-                print(produto)
+            for registro in registros:
+                objeto =  Produto(*registro)
+                listaProdutos.append(objeto)
 
         except mysql.connector.Error as e:
             print(f"Erro ao listar produtos: {e}!!!")
 
         finally:
             cursor.close()
+
+        return listaProdutos
 
     def update(conexao, id_produto, preco, quantidade):
         try:
