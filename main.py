@@ -1,17 +1,17 @@
-from database.conector import Conector
-from controllers.ProdutoController import ProdutoController
+import flet as ft
+from views.ProdutoView import produtoView
 
-conexao = Conector.conectar()
+def main(page: ft.Page):
+    page.title = "Lanchonete do Siri Cascudo"
+    page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
+    page.window.height = 600
+    page.window.width = 600
 
-if conexao != None:
-    print("Conectado com o banco de dados!")
+    def chamaProduto(e):
+        coluna = produtoView(page)
+        page.clean()
+        page.add(coluna)
 
-    produtos = ProdutoController.buscar(conexao, "Pizza")
-    if produtos!=[]:
-        for produto in produtos:
-            produto.listar()
+    page.add(ft.ElevatedButton("Produtos", on_click = chamaProduto))
 
-    else:
-        print("Nenhum Produto Encontrado!")
-    
-    Conector.fecharConexao(conexao)
+ft.app(main)
