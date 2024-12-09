@@ -2,7 +2,7 @@ import mysql.connector
 
 user = "EvertonViniciusMaster"
 senha = "Vinicius2210!"
-host = "192.168.21.21:3306"
+host = "localhost"
 banco = "lanchonete"
 
 class Conector:
