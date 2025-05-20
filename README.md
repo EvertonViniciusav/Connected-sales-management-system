@@ -64,7 +64,12 @@ pip install flet mysql-connector-python
 
 ## Contact
 
-**Author:** Everton Vinicius  
-📧 **Email:** evertonvinicius071@gmail.com
+Developed by Everton Vinicius.
 
-Feel free to reach out for feedback, collaboration, or support.
+Email: evertonvinicius071@gmail.com
+
+Feel free to contact for questions, suggestions, or collaborations.
+
+---
+
+This README was generated to provide an overview of the sales management system, its features, and usage instructions. We hope this system facilitates your sales control.
