@@ -47,7 +47,7 @@ pip install flet mysql-connector-python
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/sales-management-system.git
+   git clone https://github.com/EvertonViniciusav/Connected-sales-management-system.git
    cd sales-management-system
    ```
 
@@ -58,26 +58,9 @@ pip install flet mysql-connector-python
    - Run any provided SQL script or manually create the required tables.
 
 4. **Run the system**:
-   - To launch the GUI:
      ```bash
-     python gui.py
+     python main.py
      ```
-   - To use the terminal version:
-     ```bash
-     python index.py
-     ```
-
-## Folder Structure
-
-```
-sales-management-system/
-│
-├── gui.py             # Flet-based graphical interface
-├── index.py           # Terminal-based system
-├── database/          # DB connection and initialization scripts
-├── models/            # Classes for clients, products, orders
-└── README.md
-```
 
 ## Contact
 
